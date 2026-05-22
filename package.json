@@ -1,0 +1,69 @@
+{
+  "name": "tree-sitter-dql",
+  "version": "0.1.0",
+  "description": "Tree-sitter grammar for the DQL language ecosystem (DQL, DQL-EF, DQL-SF, DQL-SN)",
+  "main": "bindings/node",
+  "keywords": [
+    "tree-sitter",
+    "dql",
+    "customs"
+  ],
+  "license": "MIT",
+  "files": [
+    "bindings/node",
+    "grammar.js",
+    "binding.gyp",
+    "prebuilds/**",
+    "queries/**",
+    "src/**",
+    "*.json",
+    "*.gyp"
+  ],
+  "dependencies": {
+    "nan": "^2.22.0",
+    "node-addon-api": "^8.3.1"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.24.7"
+  },
+  "scripts": {
+    "build": "tree-sitter generate && node-gyp build",
+    "test": "tree-sitter test",
+    "generate": "tree-sitter generate"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.dql",
+      "file-types": [
+        "dql"
+      ],
+      "highlights": "queries/highlights.scm",
+      "locals": "queries/locals.scm",
+      "indents": "queries/indents.scm",
+      "folds": "queries/folds.scm"
+    },
+    {
+      "scope": "source.dqlef",
+      "file-types": [
+        "dqlef"
+      ],
+      "highlights": "queries/highlights.scm",
+      "locals": "queries/locals.scm"
+    },
+    {
+      "scope": "source.dqlsf",
+      "file-types": [
+        "dqlsf"
+      ],
+      "highlights": "queries/highlights.scm",
+      "locals": "queries/locals.scm"
+    },
+    {
+      "scope": "source.dqlsn",
+      "file-types": [
+        "dqlsn"
+      ],
+      "highlights": "queries/highlights.scm"
+    }
+  ]
+}
