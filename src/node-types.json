@@ -250,6 +250,10 @@
     "named": false
   },
   {
+    "type": "DATA",
+    "named": false
+  },
+  {
     "type": "DATE",
     "named": false
   },
@@ -323,6 +327,10 @@
   },
   {
     "type": "FUZZY",
+    "named": false
+  },
+  {
+    "type": "IMPORT",
     "named": false
   },
   {

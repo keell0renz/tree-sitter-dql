@@ -92,6 +92,8 @@ module.exports = grammar({
         "ALIAS",
         "AS",
         "LET",
+        "IMPORT",
+        "DATA",
         "FN",
         "CALL",
         "PRINT",

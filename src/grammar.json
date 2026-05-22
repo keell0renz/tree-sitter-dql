@@ -241,6 +241,14 @@
         },
         {
           "type": "STRING",
+          "value": "IMPORT"
+        },
+        {
+          "type": "STRING",
+          "value": "DATA"
+        },
+        {
+          "type": "STRING",
           "value": "FN"
         },
         {
